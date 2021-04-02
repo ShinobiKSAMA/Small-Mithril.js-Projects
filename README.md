@@ -5,5 +5,6 @@ Mithril is a modern client-side JavaScript framework for building Single Page Ap
 ### Project List:
 <ul>
   <li><a href="Color%20Code%20Converter">Color Code Changer</a></li>
+  <li><a href="Guess%20The%20Color">Guess The Color</a></li>
   <li><a href="To-Do%20List">To-Do List</a></li>
 </ul>
