@@ -21,6 +21,7 @@ main {
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+    border-radius: 2rem;
     transition: background .5s;
     -webkit-transition: background .5s;
     -moz-transition: background .5s;
@@ -39,7 +40,7 @@ h1 {
 
 #color-display {
     display: block;
-    font-size: 2em;
+    font-size: 100%;
 }
 
 #stripe {
@@ -47,4 +48,9 @@ h1 {
     height: 30px;
     text-align: center;
     color: black;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
 }

@@ -32,26 +32,24 @@ m.mount(
         return m('main', [
             m('h1', [
                 'The Great',
-                m('span#color-display',curColor),
+                m('span#color-display',curColor ? curColor : "RGB"),
                 'Guessing Game',
             ]),
             m('div', {id: 'stripe'}, [
-                m('button', {id:'reset'}, 'New Colors'),
-                m('span', {id: 'message'}),
                 m('button', {
                     class:'mode',
                     onclick: function() {  
                         colorArray = Array.from({length: 3}, (_) => getRandomRgb())
                         curColor = colorArray[(Math.random() * colorArray.length) | 0]
                     }
-                }, 'Easy'),
+                }, 'New Easy Game'),
                 m('button', {
                     class:'mode',
                     onclick: function() {
                         colorArray = Array.from({length: 6}, (_) => getRandomRgb())
                         curColor = colorArray[(Math.random() * colorArray.length) | 0]
                     }
-                }, 'Hard'),
+                }, 'New Hard Game'),
             ]),
             m('div', {id:'container'}, [].concat(
                 colorArray.map(data => newSquare(data))
